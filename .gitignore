@@ -1,0 +1,4 @@
+# Installed modules and Help-files shouldn't be added to the repository
+Help/
+Modules/
+
