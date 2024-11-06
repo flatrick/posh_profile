@@ -126,6 +126,10 @@ Code Line Counter/Analyzer that is both quick and presents the data per programm
 
 This one is currently _only_ to enable support for nvim-treesitter in NeoVim
 
+[Zig Compiler](https://ziglang.org/download/)
+
 ### CMake compiler
 
 This one is currently _only_ to enable support for telescope-fzf-native in NeoVim
+
+[CMake Compiler](https://cmake.org/download/)
