@@ -121,3 +121,11 @@ This one is primarily to make sure I'm always aware of what repo+branch I'm curr
 Code Line Counter/Analyzer that is both quick and presents the data per programming language.
 
 [GitHub - XAMPPRocky/tokei: Count your code, quickly.](https://github.com/XAMPPRocky/tokei)
+
+### Zig compiler
+
+This one is currently _only_ to enable support for nvim-treesitter in NeoVim
+
+### CMake compiler
+
+This one is currently _only_ to enable support for telescope-fzf-native in NeoVim
