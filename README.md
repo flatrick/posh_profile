@@ -74,6 +74,12 @@ Tools for querying JSON, XML and YAML.
 
 [GitHub - mikefarah/yq: yq is a portable command-line YAML, JSON, XML, CSV, TOML and properties processor](https://github.com/mikefarah/yq)
 
+### jdupes
+
+A fast and powerful cross-platform duplicate file finder.
+
+[jbruchon/jdupes - codeberg](https://codeberg.org/jbruchon/jdupes)
+
 ### lazygit
 
 A TUI (text based user-interface) for working with a git-repository. For those who want to work from the commandline and want/need an easier way to work with the repository.
@@ -108,7 +114,7 @@ For most Windows-users, this might feel unneccessary, but for an "old unix-tech"
 
 This one is primarily to make sure I'm always aware of what repo+branch I'm currently working in, but it has a lot of additional options to make the commandline feel a little nicer. It works in more than just Powershell, so if you use for example Bash, the same config would work there too.
 
-https://starship.rs/
+[Starship.rs](https://starship.rs/)
 
 ### tokei
 
