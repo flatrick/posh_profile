@@ -1,9 +1,7 @@
 # Define patterns to match unwanted paths in $ENV:PATH
 $unwantedPatterns = @(
-    "JetBrains\JetBrains Rider 2023.1",
-    "AppData\Local\Programs\Ollama",
-    "AppData\Local\Programs\oh-my-posh",
-    "AppData\Local\Microsoft\WinGet\Packages\",
+    "firstStringHere",
+    "SecondStringHere"
 )
 
 # Split $ENV:PATH into an array of paths
@@ -21,8 +19,11 @@ $filteredPaths = $currentPaths | Where-Object {
     $_ -and $keepPath  # Ensure it's not empty and doesn't match any unwanted pattern
 }
 
+# Remove duplicate paths
+$uniquePaths = $filteredPaths | Select-Object -Unique
+
 # Rebuild the PATH variable with the filtered paths
-$updatedPath = ($filteredPaths -join ';') + ';'
+$updatedPath = ($uniquePaths -join ';') + ';'
 
 Write-Output "Updated PATH (preview only): $updatedPath"
 
