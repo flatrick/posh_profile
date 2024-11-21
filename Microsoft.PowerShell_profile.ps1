@@ -1,10 +1,14 @@
 Invoke-Expression (&starship init powershell)
 
-Set-PsFzfOption -TabExpansion
-Set-PsFzfOption -EnableAliasFuzzyEdit
-#Set-PsFzfOption -EnableAliasFuzzySetLocation <# I've replaced the use of this with fd.exe #>
-Set-PsFzfOption -EnableAliasFuzzyHistory
-Set-PsFzfOption -EnableAliasFuzzyGitStatus
+where.exe fzf.exe
+if ($?){
+	import-module -name PsFzf
+	Write-Host "PsFzf imported"
+	Set-PsFzfOption -TabExpansion
+	Set-PsFzfOption -EnableAliasFuzzyEdit
+#	Set-PsFzfOption -EnableAliasFuzzySetLocation <# this has been replaced with fd.exe in my setup #>
+	Set-PsFzfOption -EnableAliasFuzzyHistory
+}
 
 <# My aliases for tools #>
 
