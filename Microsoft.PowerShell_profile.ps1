@@ -31,17 +31,21 @@ Function br {
 }
 
 Function ll {
-	eza --long --all --flags --group-directories-first
+  param ([string[]]$arguments)
+	eza --long --all --flags --group-directories-first $arguments
 }
 
 Function la {
-	eza --long --all --group-directories-first --absolute
+  param ([string[]]$arguments)
+	eza --long --all --flags --group-directories-first --absolute $arguments
 }
 
 Function gll {
-	eza --long --all --flags --group-directories-first --git
+  param ([string[]]$arguments)
+	eza --long --all --flags --group-directories-first --git $arguments
 }
 
 Function gla {
-	eza --long --all --flags --group-directories-first --absolute --git 
+  param ([string[]]$arguments)
+	eza --long --all --flags --group-directories-first --absolute --git $arguments
 }
